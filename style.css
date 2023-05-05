@@ -61,7 +61,11 @@ main {
 }
 
 .mainHeading {
-  font-size: 3.2rem;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
 }
 
 .marginBottom {
@@ -102,6 +106,13 @@ main {
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
   margin-bottom: 10rem;
+  background-color: hsl(120, 81%, 25%);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+}
+.sectionFeedback img {
+  border-radius: 15px;
 }
 .text2 {
   align-self: center;
@@ -122,18 +133,27 @@ main {
 li {
   padding-left: 1rem;
   list-style-position: inside;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .items {
-  padding: 1rem;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px gray;
 }
 .items > figure {
   margin-bottom: 1.5rem;
 }
 
+.items img {
+  width: 100%;
+}
 .items ul {
   margin-bottom: 1.6rem;
+}
+
+.items div {
+  padding: 2rem;
 }
 
 .items > div > :last-child {
@@ -141,6 +161,7 @@ li {
   justify-content: space-between;
   gap: 1rem;
   align-items: center;
+  /* padding: 1rem; */
 }
 
 .items h3 {
@@ -148,7 +169,7 @@ li {
 }
 
 .items > div > :last-child > strong {
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
 }
 
 footer > p {
@@ -156,4 +177,21 @@ footer > p {
   text-transform: capitalize;
   color: darkgray;
   margin-top: 2rem;
+}
+
+.items a {
+  background-color: hsl(120, 81%, 25%);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 15000px;
+}
+
+.shopAnchor {
+  background-color: hsl(120, 81%, 25%);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 15000px;
+  font-size: 2rem;
+  margin-top: 2rem;
+  display: inline-block;
 }
