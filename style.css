@@ -191,10 +191,6 @@ li {
   margin-bottom: 1rem;
 }
 
-.items > div > :last-child > strong {
-  /* font-size: 1.4rem; */
-}
-
 footer > p {
   text-align: center;
   text-transform: capitalize;
@@ -219,6 +215,52 @@ footer > p {
   margin-top: 2rem;
   display: inline-block;
 }
+
+@media only screen and (max-width: 970px) {
+  main {
+    padding: 0px;
+  }
+
+  .overview {
+    background-image: url("./images/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgb(106, 102, 102);
+    color: azure;
+    padding: 5rem 0rem 2rem 2rem;
+    margin-bottom: 5rem;
+
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .overview figure {
+    display: none;
+  }
+  .overview ~ section {
+    /* margin: 2rem; */
+    margin-inline: 1rem;
+  }
+  section.sectionPros {
+    margin-bottom: 5rem;
+  }
+
+  .sectionFeedback {
+    margin-bottom: 5rem;
+  }
+  .sectionItems {
+    gap: 2rem 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sectionItems > div:nth-of-type(3) {
+    grid-column: 1/2;
+  }
+}
+
+/* //////////////////////////// */
+
 @media only screen and (max-width: 600px) {
   main {
     width: 100%;
@@ -296,5 +338,8 @@ footer > p {
 
   .items {
     grid-column: 1/-1;
+  }
+  .sectionItems > div:nth-of-type(3) {
+    grid-column: span 2;
   }
 }
