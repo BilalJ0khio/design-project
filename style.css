@@ -23,6 +23,11 @@ main a {
   color: gray;
 }
 
+main a:hover {
+  background-color: hsl(133, 25%, 89%);
+  color: black;
+}
+
 body {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
@@ -330,7 +335,9 @@ footer > p {
   }
   .sectionItems {
     grid-column: 1/-1;
-    padding: 0rem;
+    margin: 0px;
+    column-gap: 0px;
+    margin-inline: 0px !important;
   }
   .sectionItems h2 {
     margin-bottom: 2rem;
@@ -338,8 +345,15 @@ footer > p {
 
   .items {
     grid-column: 1/-1;
+    max-width: 400px;
+    /* width: 100%; */
+    justify-self: center;
   }
   .sectionItems > div:nth-of-type(3) {
     grid-column: span 2;
+  }
+
+  section.sectionFeedback {
+    margin-inline: 0px;
   }
 }
