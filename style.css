@@ -359,6 +359,7 @@ items > figure {
   }
   .sectionItems h2 {
     margin-bottom: 2rem;
+    text-align: center;
   }
 
   .items {
