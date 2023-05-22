@@ -26,7 +26,7 @@ main a {
 main a:hover {
   background-color: hsl(132, 20%, 95%);
   color: black;
-  border: 1px solid #087f5b;
+  outline: 1px solid #087f5b;
 }
 
 body {
@@ -44,24 +44,23 @@ main {
 }
 
 .mainNav {
-  text-align: center;
-  /* border: 1px solid black; */
-  padding: 0.5rem;
+  padding: 1rem;
   background-color: #074a36;
+  text-align: right;
 }
 .mainNav a {
   text-decoration: none;
-  font-size: 2.3rem;
+  margin-right: 2rem;
+
+  font-size: 1.8rem;
   display: inline-block;
-  /* background-color: royalblue; */
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   border-radius: 0.5rem;
 }
 
 .mainNav a:hover {
-  background-color: #087f5b;
+  outline: 2px solid #087f5b;
   color: aliceblue;
-  font-size: 2.4rem;
 }
 
 .overview {
@@ -114,6 +113,7 @@ h2 {
   width: 32px;
   height: 32px;
   stroke: #087f5b;
+  margin-bottom: 1rem;
 }
 
 .prosFlex h3 {
@@ -164,7 +164,7 @@ h2 {
 
 .sectionItems h2 {
   grid-column: 1/4;
-  margin-bottom: 0rem;
+  margin-bottom: 2.4rem;
 }
 
 li {
